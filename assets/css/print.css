@@ -1,0 +1,43 @@
+/* =====================================================================
+   Printing: teaching load sheets, reports and payment statements
+   ===================================================================== */
+
+@page { size: A4; margin: 15mm; }
+
+body {
+    background: #fff !important;
+    font-size: 11pt;
+    color: #000;
+}
+
+.no-print,
+.app-navbar,
+.app-footer,
+.filters,
+.btn,
+.alert-dismissible { display: none !important; }
+
+.print-only { display: block !important; }
+
+main.container-xl {
+    max-width: none !important;
+    padding: 0 !important;
+}
+
+.card,
+.print-sheet {
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+.table { font-size: 9.5pt; }
+.table thead th { background: #eee !important; color: #000; }
+tr { page-break-inside: avoid; }
+
+.badge {
+    border: 1px solid #555;
+    color: #000 !important;
+    background: transparent !important;
+}
+
+a { color: #000; text-decoration: none; }
